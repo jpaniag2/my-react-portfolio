@@ -4,6 +4,8 @@ import Freelance from './Components/Freelance';
 import { freelanceObjOne } from './Components/Freelance/Data';
 import Hero from './Components/Hero';
 import { homeObjOne } from './Components/Hero/Data';
+import Projects from './Components/Projects';
+import { projectObjOne, projectObjTwo } from './Components/Projects/Data';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Hero {...homeObjOne}/>
       <Experience />
       <Freelance {...freelanceObjOne}/>
+      <Projects {...projectObjOne} />
+      <Projects {...projectObjTwo} />
     </>
   );
 }
