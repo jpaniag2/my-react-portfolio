@@ -9,14 +9,13 @@ import { InfoContainer,
          TopLine,
          Heading,
          Subtitle,
-         BtnWrap,
          ImgWrap,
          Img,
          Introduction
         } from './HeroStyle';
 
 
-const Hero = ({primary, dark, dark2,lightBg, id, imgStart, introduction, topLine, lightText, headline, darkText, description, img, alt, buttonLabel}) => {
+const Hero = ({lightBg, id, imgStart, introduction, topLine, lightText, headline, darkText, description, img, alt}) => {
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
