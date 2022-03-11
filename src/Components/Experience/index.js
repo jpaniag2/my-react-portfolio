@@ -9,15 +9,12 @@ import { InfoContainer,
          TopLine,
          TechnologyItem,
          Subtitle,
-         BtnWrap,
-         ImgWrap,
-         Img,
          Introduction,
          HeadingWrapper
         } from './ExperienceStyle';
 
 
-const Experience = ({primary, dark, dark2,lightBg, id, imgStart, introduction, topLine, lightText, headline, darkText, description, img, alt, buttonLabel}) => {
+const Experience = ({lightBg, imgStart, darkText}) => {
   return (
     <>
     <InfoContainer lightBg={lightBg} id='overview'>

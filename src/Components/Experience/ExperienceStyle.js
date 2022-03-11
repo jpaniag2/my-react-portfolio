@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
     color: #fff;
-
-    ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
     background: #1D1D1D;
 
     @media screen and (max-width: 1024px){
@@ -92,12 +90,6 @@ export const TechnologyItem = styled.li`
 `
 
 export const Subtitle = styled.p`
-    ${'' /* max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#fff' : '#fff')}; */}
-
     color: #fff;
     font-size: 1rem;
     line-height: 16px;
@@ -107,43 +99,4 @@ export const Subtitle = styled.p`
     margin-bottom: 16px;
     line-height: 30px;
 
-`
-
-
-export const BtnWrap = styled.div`
-    display: flex;
-    justify-content: flex-start;
-`
-
-export const ImgWrap = styled.div`
-    max-width: 70%;
-    height: 100%;
-
-    @media screen and (max-width: 1024px){
-        height: 800px;
-    }
-
-`
-
-export const Img = styled.img`
-    width: 100%;
-    height: 100%;
-    display: cover;
-    border-radius: 50%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
-
-    @media screen and (max-width: 1024px){
-        height: 450px;
-        padding-top: 40px;
-        border-radius: 0;
-        object-fit: contain;
-    }
-    @media screen and (max-width: 450px){
-        padding-top: 0px;
-        object-fit: contain;
-        border-radius: 0;
-        padding-top: 10px;
-        
-    }
 `
