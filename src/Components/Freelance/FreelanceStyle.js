@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
     color: #fff;
-
-    ${'' /* background: ${({lightBg}) => (lightBg ? '#F3EDE1' : '#F3EDE1')};  */}
     background: #1D1D1D;
 
     @media screen and (max-width: 1024px){
@@ -93,12 +91,6 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-    ${'' /* max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#fff' : '#fff')}; */}
-
     color: #fff;
     font-size: 1rem;
     letter-spacing: 1.4px;

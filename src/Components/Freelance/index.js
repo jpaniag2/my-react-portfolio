@@ -10,21 +10,17 @@ import { InfoContainer,
          TextWrapper, 
          TopLine,
          TopLine2,
-         Heading,
          Subtitle,
          BtnWrap,
          ImgWrap,
-         Img,
-         Introduction
+         Img
         } from './FreelanceStyle';
 
 
-const Freelance = ({primary, dark, 
-    dark2,lightBg, id, imgStart, 
-    introduction, projectName, topLine, lightText, 
-    headline, darkText, description, 
-    img, alt, buttonLabel, projectName2, img2, 
-    description2, buttonLabel2, repositoryUrl, repositoryUrl2
+const Freelance = ({lightBg, imgStart, 
+                    projectName, darkText, description, 
+                    img, alt, projectName2, img2, 
+                    description2, repositoryUrl, repositoryUrl2
     }) => {
   return (
 
@@ -33,7 +29,6 @@ const Freelance = ({primary, dark,
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              {/* <Introduction>{projectName}</Introduction> */}
               <TopLine>{projectName}</TopLine>
               <ImgWrap>
               <Img src={img} alt={alt} />
@@ -49,7 +44,6 @@ const Freelance = ({primary, dark,
 
           <Column2>
           <TextWrapper>
-              {/* <Introduction>{projectName}</Introduction> */}
               <TopLine2>{projectName2}</TopLine2>
               <ImgWrap>
               <Img src={img2} alt={alt} />
