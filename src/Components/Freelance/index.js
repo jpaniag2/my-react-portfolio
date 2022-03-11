@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ButtonStyle';
+import '../Freelance/Freelance.css'
 
 import { InfoContainer, 
          InfoWrapper, 
@@ -23,7 +24,7 @@ const Freelance = ({primary, dark,
     introduction, projectName, topLine, lightText, 
     headline, darkText, description, 
     img, alt, buttonLabel, projectName2, img2, 
-    description2, buttonLabel2
+    description2, buttonLabel2, repositoryUrl, repositoryUrl2
     }) => {
   return (
 
@@ -39,18 +40,10 @@ const Freelance = ({primary, dark,
             </ImgWrap>
               <Subtitle darkText={darkText}>{description}</Subtitle>
 
-              {/* <BtnWrap>
-                <Button to='/' 
-                smooth={true} 
-                duration={500} 
-                spy={true} 
-                exact="true" 
-                offset={-80} 
-                primary={primary ? 1 : 0} 
-                dark={dark ? 1: 0} 
-                dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
-              </BtnWrap> */}
+              <BtnWrap>
+              <Button><a href={repositoryUrl} target="_blank">Repository</a></Button>
 
+              </BtnWrap>
             </TextWrapper>
           </Column1>
 
@@ -63,17 +56,10 @@ const Freelance = ({primary, dark,
             </ImgWrap>
               <Subtitle darkText={darkText}>{description2}</Subtitle>
 
-              {/* <BtnWrap>
-                <Button to='/' 
-                smooth={true} 
-                duration={500} 
-                spy={true} 
-                exact="true" 
-                offset={-80} 
-                primary={primary ? 1 : 0} 
-                dark={dark ? 1: 0} 
-                dark2={dark2 ? 1 : 0}>{buttonLabel2}</Button>
-              </BtnWrap> */}
+              <BtnWrap>
+              <Button><a href={repositoryUrl2} target="_blank">Repository</a></Button>
+
+              </BtnWrap>
 
             </TextWrapper>
           </Column2>

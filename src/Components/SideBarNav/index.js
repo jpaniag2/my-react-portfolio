@@ -40,13 +40,13 @@ const SideBarNav = () => {
                     <NavigationItem>
                         <NavigationLinks to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-60}>Projects</NavigationLinks>
                     </NavigationItem>
-
+                        <br></br>
                     <NavigationItem>
-                        <Socials><a href="https://github.com/jpaniag2"><FaGithub color='#fff'/></a></Socials>
+                        <a href="https://github.com/jpaniag2" target="_blank"><FaGithub size='2rem' color='#fff'/></a>
                     </NavigationItem>
 
                     <NavigationItem>
-                        <Socials><a href="https://www.linkedin.com/in/juliopaniaguaalanis/"><FaLinkedin color='#fff'/></a></Socials>
+                        <a href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaLinkedin size='2rem' color='#fff'/></a>
                     </NavigationItem>
 
                 </NavigationMap>

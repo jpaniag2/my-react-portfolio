@@ -74,7 +74,7 @@ export const Introduction = styled.p`
 `
 
 export const TopLine = styled.p`
-    color: green;
+    color: #01bf71;
     font-size: 1rem;
     line-height: 16px;
     font-weight: 700;

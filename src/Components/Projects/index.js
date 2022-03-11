@@ -40,17 +40,10 @@ const Projects = ({primary, dark,
             </ImgWrap>
               <Subtitle darkText={darkText}>{description}</Subtitle>
 
-              {/* <BtnWrap>
-                <Button to={repositoryUrl} 
-                smooth={true} 
-                duration={500} 
-                spy={true} 
-                exact="true" 
-                offset={-80} 
-                primary={primary ? 1 : 0} 
-                dark={dark ? 1: 0} 
-                dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
-              </BtnWrap> */}
+              <BtnWrap>
+              <Button><a href={repositoryUrl} target="_blank">Repository</a></Button>
+
+              </BtnWrap>
 
             </TextWrapper>
           </Column1>
@@ -64,17 +57,10 @@ const Projects = ({primary, dark,
             </ImgWrap>
               <Subtitle darkText={darkText}>{description2}</Subtitle>
 
-              {/* <BtnWrap>
-                <Button to={repositoryUrl2}
-                smooth={true} 
-                duration={500} 
-                spy={true} 
-                exact="true" 
-                offset={-80} 
-                primary={primary ? 1 : 0} 
-                dark={dark ? 1: 0} 
-                dark2={dark2 ? 1 : 0}>{buttonLabel2}</Button>
-              </BtnWrap> */}
+              <BtnWrap>
+              <Button><a href={repositoryUrl2} target="_blank">Repository</a></Button>
+
+              </BtnWrap>
 
             </TextWrapper>
           </Column2>
