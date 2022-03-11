@@ -7,8 +7,7 @@ import {
     NavBarContainer,
     NavigationMap,
     NavigationLinks,
-    NavigationItem,
-    Socials
+    NavigationItem
 
 } from './SideBarNavStyle'
 

@@ -64,8 +64,6 @@ export const NavigationLinks = styled(LinkScroll)`
     padding: 1rem;
     cursor: pointer;
     font-size: 2.3rem;
-    ${'' /* margin-top: ${({scrollNav}) => (scrollNav ? '1rem' : '2.6rem')}; */}
-    ${'' /* margin-top: 3rem; */}
 
     @media screen and (max-width: 1024px){
         font-size: 12px;
@@ -83,21 +81,4 @@ export const NavigationLinks = styled(LinkScroll)`
             transition: 0.5s all ease;
         }
 
-`
-export const Socials = styled.a`
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    display: inline-grid;
-    align-items: center;
-    text-decorations: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 2.3rem;
-    line-height: 30px;
-
-    &: hover{
-            color: #01bf71;
-            transition: 0.5s all ease;
-    }
 `
