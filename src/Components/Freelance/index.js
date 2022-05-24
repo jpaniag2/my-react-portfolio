@@ -20,7 +20,7 @@ import { InfoContainer,
 const Freelance = ({lightBg, imgStart, 
                     projectName, darkText, description, 
                     img, alt, projectName2, img2, 
-                    description2, repositoryUrl, repositoryUrl2
+                    description2, repositoryUrl, repositoryUrl2, buttonLabel
     }) => {
   return (
 
@@ -36,7 +36,7 @@ const Freelance = ({lightBg, imgStart,
               <Subtitle darkText={darkText}>{description}</Subtitle>
 
               <BtnWrap>
-              <Button><a href={repositoryUrl} target="_blank">Repository</a></Button>
+              <Button><a href={repositoryUrl} target="_blank">{buttonLabel}</a></Button>
 
               </BtnWrap>
             </TextWrapper>
@@ -51,7 +51,7 @@ const Freelance = ({lightBg, imgStart,
               <Subtitle darkText={darkText}>{description2}</Subtitle>
 
               <BtnWrap>
-              <Button><a href={repositoryUrl2} target="_blank">Repository</a></Button>
+              <Button><a href={repositoryUrl2} target="_blank">{buttonLabel}</a></Button>
 
               </BtnWrap>
 

@@ -5,16 +5,16 @@ export const freelanceObjOne = {
     lightTextDesc: false,
     projectName: "Azteca Bakery",
     img: require('../../images/azteca_webapp.png'), 
-    description: 'Designing and developing a responsive cake ordering website for a local Mexican bakery using React.js.',
-    buttonLabel: 'Repository',
-    repositoryUrl: 'https://github.com/jpaniag2/Azteca-Bakery-React-Website',
+    description: 'Designing and developing a responsive website for a local Mexican bakery using React.js.',
+    buttonLabel: 'Visit Website',
+    repositoryUrl: 'https://theaztecabakery.com/',
 
 
     projectName2: "La Acapulqueña",
     img2: require('../../images/acapulquena_webapp.png'),
     description2: 'Designing and developing a responsive food ordering website for a Mexican store & taqueria using React.js.',
-    buttonLabel2: 'Repository',
-    repositoryUrl2: 'https://github.com/jpaniag2/la-acapulquena-react-ws',
+    buttonLabel2: 'Visit Website',
+    repositoryUrl2: 'https://acapulquenasupermarket.com/',
 
     alt: 'Projects',
     imgStart: false,
