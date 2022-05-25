@@ -49,7 +49,7 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 940px;
     padding-top: 60px;
     padding-left: 5%;
     position: absolute; 
@@ -63,6 +63,10 @@ export const Introduction = styled.p`
     line-height: 1.1;
     font-weight: 700;
     color: ${({lightText}) => (lightText ? '#111' : '#ce202a')};
+
+    @media screen and (max-width: 1024px){
+        color: transparent;
+    }
 
     @media screen and (max-width: 480px){
         font-size: 32px;

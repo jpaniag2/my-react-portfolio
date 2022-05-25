@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -60,6 +61,7 @@ export const HeadingWrapper = styled.div`
 
 export const Introduction = styled.p`
     margin-bottom: 24px;
+    text-align: center;
     font-size: 4rem;
     font-family: 'Bellota Text', cursive;
     line-height: 1.1;
@@ -72,7 +74,7 @@ export const Introduction = styled.p`
 `
 
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #ce202a;
     font-size: 1rem;
     line-height: 16px;
     font-weight: 700;
@@ -80,6 +82,7 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 16px;
     line-height: 30px;
+    text-align: center;
 `
 
 export const TechnologyItem = styled.li`
@@ -98,5 +101,28 @@ export const Subtitle = styled.p`
     text-transform: uppercase;
     margin-bottom: 16px;
     line-height: 30px;
+    padding-left: 50%;
+
+`
+export const Image = styled(motion.img)`
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        max-height: 300px;
+        z-index: 0;
+
+        @media screen and (max-width: 1024px){
+            
+            width: 50%;
+            height: 50%;
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        @media screen and (max-width: 450px){
+            display: none;
+        }
 
 `

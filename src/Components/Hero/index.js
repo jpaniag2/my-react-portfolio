@@ -3,17 +3,11 @@ import styled from 'styled-components'
 import Video from '../../videos/hero_video.mp4'
 import { Container } from 'react-bootstrap';
 
-import { InfoContainer, 
-         InfoWrapper, 
-         InfoRow, 
-         Column1, 
-         Column2, 
+import { 
          TextWrapper, 
          TopLine,
          Heading,
          Subtitle,
-         ImgWrap,
-         Img,
          Introduction
         } from './HeroStyle';
 
@@ -37,7 +31,6 @@ const HeroBg = styled.div`
     -o-object-fit: none;
     object-fit: cover;
     background-color: transparent;
-    ${'' /* background: #232a34; */}
 
     @media screen and (max-width: 1024px){
         margin-top: 10%;
@@ -52,34 +45,12 @@ const HeroBg = styled.div`
     
 `;
 
-const Hero = ({lightBg, id, imgStart, introduction, topLine, lightText, headline, darkText, description, img, alt}) => {
+const Hero = ({introduction, topLine, lightText, headline, darkText, description}) => {
   return (
     <>
 
       <Container fluid>
       <HeroBg>
-{/* 
-    <InfoContainer lightBg={lightBg} id={id}>
-      <InfoWrapper>
-        <InfoRow imgStart={imgStart}>
-          <Column1>
-            <TextWrapper>
-              <Introduction>{introduction}</Introduction>
-              <TopLine>{topLine}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
-              <br></br>
-              <br></br>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
-            </TextWrapper>
-          </Column1>
-          <Column2>
-            <ImgWrap>
-              <Img src={img} alt={alt} />
-            </ImgWrap>
-          </Column2>
-        </InfoRow>
-      </InfoWrapper>
-    </InfoContainer> */}
           <TextWrapper>
               <Introduction>{introduction}</Introduction>
               <TopLine>{topLine}</TopLine>
