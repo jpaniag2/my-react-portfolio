@@ -14,9 +14,9 @@ const HomeContents = () => {
   return (
     
     <Container fluid style={{backgroundColor: '#1D1D1D', marginTop:'3%'}}>
-    <NavBar /> //Complete
-    <Hero {...homeObjOne}/> //Complete
-    
+    <NavBar />
+    <Hero {...homeObjOne}/> 
+
     <Experience />
     <Freelance {...freelanceObjOne}/>
     <Projects {...projectObjOne} />

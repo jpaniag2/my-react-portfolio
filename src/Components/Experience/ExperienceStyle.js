@@ -103,6 +103,17 @@ export const Subtitle = styled.p`
     line-height: 30px;
     padding-left: 50%;
 
+    &:hover{
+        color: #ce202a;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1024px){
+        padding-left: 20%;
+        z-index: 1;
+        }
+
+
 `
 export const Image = styled(motion.img)`
 
@@ -113,12 +124,29 @@ export const Image = styled(motion.img)`
         max-height: 300px;
         z-index: 0;
 
-        @media screen and (max-width: 1024px){
-            
-            width: 50%;
-            height: 50%;
+        @media screen and (max-width: 1500px){
+            width: 100%;
+            height: 100%;
             max-width: 200px;
             max-height: 200px;
+        }
+
+        @media screen and (max-width: 1200px){
+            width: 100%;
+            height: 100%;
+            max-width: 150px;
+            max-height: 150px;
+            margin-left: -3%;
+        }
+
+        @media screen and (max-width: 900px){
+            margin-top: -700px;
+            margin-left: 3%;
+            width: 100%;
+            height: 100%;
+            max-width: 100px;
+            max-height: 100px;
+            z-index: 0;
         }
 
         @media screen and (max-width: 450px){
