@@ -9,16 +9,13 @@ const NavStyle = styled.div`
         
     }
 
-     .navbar-nav{
-
-    }
     .nav-link{
 
     }
 
     .navbar-brand{
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     img{
@@ -47,23 +44,27 @@ const NavBar = () => {
                       <Nav className="me-auto">
                       </Nav>
                       <Nav>
-                          <Nav.Item >
-                              <a style={{color:'#fff'}} href="https://github.com/jpaniag2" target="_blank"><FaGithub size='3rem' /></a>
-                          </Nav.Item>
-                          <Nav.Item>
-                              <a style={{color:'#fff'}} href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaLinkedin size='3rem' /></a>
-                          </Nav.Item>
 
-                          <Nav.Link eventKey={2} href="#memes">
-                              
-                          </Nav.Link>
-                          <NavDropdown title="Projects" id="collasible-nav-dropdown">
-                              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                          <NavDropdown title="Projects By Language" id="collasible-nav-dropdown" >
+                              <NavDropdown.Item href="#action/3.1" >Java</NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.2">HTML,CSS,JavaScript, React.js</NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.3">Swift</NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.3">C#</NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.3">Ruby</NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.3">SQL</NavDropdown.Item>
                               <NavDropdown.Divider />
                               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                           </NavDropdown>
+                          
+                          <Nav.Link eventKey={2} href="#memes">
+                              
+                          </Nav.Link>
+                          <Nav.Item >
+                              <a style={{color:'#fff'}} href="https://github.com/jpaniag2" target="_blank"><FaGithub size='2.5rem' /></a>
+                          </Nav.Item>
+                          <Nav.Item>
+                              <a style={{color:'#fff'}} href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaLinkedin size='2.5rem' /></a>
+                          </Nav.Item>
                       </Nav>
                   </Navbar.Collapse>
               </Container>

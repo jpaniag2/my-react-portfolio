@@ -3,7 +3,7 @@ export const homeObjOne = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    introduction: "Nice to meet you!",
+    introduction: "Welcome!",
     topLine: 'My name is,', 
     headline: "JULIO PANIAGUA ALANIS",
     description: 'I am a web and mobile developer.',

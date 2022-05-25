@@ -10,6 +10,7 @@ export const InfoContainer = styled.div`
 `
 
 export const InfoWrapper = styled.div`
+    
     display: grid;
     z-index: 1;
     height: 800px;
@@ -49,8 +50,10 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-left: 5%;
+    position: absolute; 
+    
 `
 
 export const Introduction = styled.p`
@@ -59,7 +62,7 @@ export const Introduction = styled.p`
     font-family: 'Pacifico', cursive;
     line-height: 1.1;
     font-weight: 700;
-    color: ${({lightText}) => (lightText ? '#111' : '#fff')};
+    color: ${({lightText}) => (lightText ? '#111' : '#ce202a')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -67,14 +70,23 @@ export const Introduction = styled.p`
 `
 
 export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 1rem;
+    color: #000;
+    font-size: 1.5rem;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
     line-height: 30px;
+
+    @media screen and (max-width: 1024px){
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px){
+        color: #ce202a;
+        font-size: .9rem;
+    }
 `
 
 export const Heading = styled.h1`
@@ -83,15 +95,19 @@ export const Heading = styled.h1`
     font-family: 'Bellota Text', cursive;
     line-height: 1.1;
     font-weight: 700;
-    color: ${({lightText}) => (lightText ? '#111' : '#fff')};
+    color: ${({lightText}) => (lightText ? '#111' : '#000')};
 
+    @media screen and (max-width: 1024px){
+        font-size: 4rem;
+    }
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        margin-bottom: 0px;
+        font-size: 2rem;
     }
 `
 
 export const Subtitle = styled.p`
-    color: #01bf71;
+    color: #ce202a;
     font-size: 2rem;
     line-height: 16px;
     font-weight: 700;
@@ -99,7 +115,12 @@ export const Subtitle = styled.p`
     text-transform: uppercase;
     margin-bottom: 16px;
     line-height: 30px;
-
+    @media screen and (max-width: 1024px){
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 480px){
+        font-size: .9rem;
+    }
 `
 
 export const ImgWrap = styled.div`

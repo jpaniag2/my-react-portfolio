@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Experience from '../Experience';
 import Freelance from '../Freelance';
 import { freelanceObjOne } from '../Freelance/Data';
@@ -7,27 +8,12 @@ import { homeObjOne } from '../Hero/Data';
 import NavBar from '../NavBar';
 import Projects from '../Projects';
 import { projectObjOne, projectObjTwo } from '../Projects/Data';
-import SideBarNav from '../SideBarNav'
-import { Container, 
-         InfoWrapper, 
-         InfoRow, 
-         Column1, 
-         Column2, 
-         TextWrapper, 
-         TopLine,
-         Heading,
-         Subtitle,
-         BtnWrap,
-         ImgWrap,
-         Img
-        } from './HomeContentsStyle';
 
 
 const HomeContents = () => {
   return (
     
-    <Container>
-    {/* <SideBarNav /> */}
+    <Container fluid style={{backgroundColor: '#1D1D1D', marginTop:'3%'}}>
     <NavBar />
     <Hero {...homeObjOne}/>
     <Experience />
