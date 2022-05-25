@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
 
-    {/* <ScrollToTop /> */}
+    <ScrollToTop />
     
       <Routes >
         <Route exact path='/' element={<HomeContents />} />

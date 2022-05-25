@@ -45,11 +45,11 @@ const HeroBg = styled.div`
     
 `;
 
-const Hero = ({introduction, topLine, lightText, headline, darkText, description}) => {
+const Hero = ({introduction, topLine, lightText, headline, darkText, description, id}) => {
   return (
     <>
 
-      <Container fluid>
+      <Container fluid id={id}>
       <HeroBg>
           <TextWrapper>
               <Introduction>{introduction}</Introduction>

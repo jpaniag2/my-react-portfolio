@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
+
+
 
 const NavStyle = styled.div`
     .navbar{
@@ -16,6 +18,12 @@ const NavStyle = styled.div`
     .navbar-brand{
         font-weight: 400;
         font-size: 2.5rem;
+
+        &:hover{
+            cursor: pointer;
+            color: #DAF0DE !important;
+
+        }
     }
 
     img{
@@ -34,21 +42,24 @@ const NavStyle = styled.div`
 `;
 
 const NavBar = () => {
+
   return (
       <NavStyle>
+            
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
               <Container>
-                  <Navbar.Brand href="#home">Julio Paniagua-Alanis</Navbar.Brand>
+                  <Navbar.Brand href='#home'>Julio Paniagua-Alanis</Navbar.Brand>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                       <Nav className="me-auto">
                       </Nav>
-                      <Nav>
+                      <Nav navbarScroll>
 
                           <NavDropdown title="Projects By Language" id="collasible-nav-dropdown" >
-                              <NavDropdown.Item href="#action/3.1" >Java</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.2">HTML,CSS,JavaScript, React.js</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.3">Swift</NavDropdown.Item>
+
+                            <NavDropdown.Item href='#moreprojects'>Java</NavDropdown.Item>
+                              <NavDropdown.Item href='#projects'>HTML,CSS,JavaScript, React.js</NavDropdown.Item>
+                              <NavDropdown.Item href="#home">Swift</NavDropdown.Item>
                               <NavDropdown.Item href="#action/3.3">C#</NavDropdown.Item>
                               <NavDropdown.Item href="#action/3.3">Ruby</NavDropdown.Item>
                               <NavDropdown.Item href="#action/3.3">SQL</NavDropdown.Item>
