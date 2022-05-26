@@ -55,9 +55,21 @@ export const TextWrapper = styled.div`
     padding-bottom: 60px;
     display: block;
 `
+export const Introduction = styled.p`
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bellota Text', cursive;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${({lightText}) => (lightText ? '#111' : '#fff')};
 
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
+`
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #ce202a;
     font-size: 1rem;
     line-height: 16px;
     font-weight: 700;
@@ -65,6 +77,7 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 16px;
     line-height: 30px;
+    text-align: center;
 `
 
 export const Heading = styled.h1`

@@ -1,72 +1,104 @@
 import React from 'react';
-import { Button } from '../ButtonStyle';
+import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
+import ProjectCard from '../ProjectCard';
+import { WagApp, GymMembership, CampusEats, CindysCatering } from '../ProjectCard/Data';
+import { Introduction, TopLine } from './ProjectsStyle';
+import styled from 'styled-components'
 
+const TabStyles = styled.div`
+  .nav-link{
+    transition: all 0.5s ease-out;
+      margin: 1rem 0;
+      background-color: #fff;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #000;
+      &:hover{
+        opacity: .8;
+        background-color: #fff !important;
+        color: #000;
+        transition: all 0.3s ease-out;
+      }
+  }
+`
 
-import { InfoContainer, 
-         InfoWrapper, 
-         InfoRow, 
-         Column1, 
-         Column2, 
-         TextWrapper, 
-         TopLine,
-         Heading,
-         Subtitle,
-         BtnWrap,
-         ImgWrap,
-         Img,
-         Introduction
-        } from './ProjectsStyle';
+const Projects = () => {
 
-
-const Projects = ({primary, dark, 
-    dark2,lightBg, id, imgStart, 
-    introduction, projectName, topLine, lightText, 
-    headline, darkText, description, 
-    img, alt, buttonLabel, repositoryUrl, projectName2, img2, 
-    description2, buttonLabel2, repositoryUrl2
-    }) => {
+  const javaProjects = [WagApp, GymMembership]
+  const csharpProjects = [CampusEats, CindysCatering]
+  const databaseProjects = [CampusEats, WagApp]
+  const webProjects = []
+  const swiftProjects = []
+  const kotlinProjects = []
+  const rubyProjects = []
 
   return (
+    <Container fluid style={{ backgroundColor: '#212429' }}>
+      <Container fluid="xxl">
 
-    <InfoContainer lightBg={lightBg} id={id}>
-      <InfoWrapper>
-        <InfoRow imgStart={imgStart}>
-          <Column1>
-            <TextWrapper>
-              {/* <Introduction>{projectName}</Introduction> */}
-              <TopLine>{projectName}</TopLine>
-              <ImgWrap>
-              <Img src={img} alt={alt} />
-            </ImgWrap>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
+        <Introduction>Projects</Introduction>
+        <TopLine>by language</TopLine>
 
-              <BtnWrap>
-              <Button><a href={repositoryUrl} target="_blank">Repository</a></Button>
+        <TabStyles>
+          <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+            <Row>
+              <Col sm={3}>
+                <Nav fill variant="pills" className="flex-column">
+                  <Nav.Item >
+                    <Nav.Link eventKey="first" style={{ cursor: 'pointer' }}>Java</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="second" style={{ cursor: 'pointer' }}>C#</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="third" style={{ cursor: 'pointer' }}>SQL</Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </Col>
 
-              </BtnWrap>
+              <Col sm={9}>
+                <Tab.Content>
+                  <Tab.Pane eventKey="first">
+                    <Row xs={1} md={2} className="g-4">
+                      {javaProjects.map((project) => (
+                        <Col>
+                          <ProjectCard {...project} />
+                        </Col>
+                      ))}
+                    </Row>
+                    <br></br>
+                  </Tab.Pane>
 
-            </TextWrapper>
-          </Column1>
+                  <Tab.Pane eventKey="second">
+                    <Row xs={1} md={2} className="g-4">
+                      {csharpProjects.map((project) => (
+                        <Col>
+                          <ProjectCard {...project} />
+                        </Col>
+                      ))}
+                    </Row>
+                    <br></br>
+                  </Tab.Pane>
 
-          <Column2>
-          <TextWrapper>
-              {/* <Introduction>{projectName}</Introduction> */}
-              <TopLine>{projectName2}</TopLine>
-              <ImgWrap>
-              <Img src={img2} alt={alt} />
-            </ImgWrap>
-              <Subtitle darkText={darkText}>{description2}</Subtitle>
+                  <Tab.Pane eventKey="third">
+                    <Row xs={1} md={2} className="g-4">
+                      {databaseProjects.map((project) => (
+                        <Col>
+                          <ProjectCard {...project} />
+                        </Col>
+                      ))}
+                    </Row>
+                    <br></br>
+                  </Tab.Pane>
+                </Tab.Content>
+              </Col>
+            </Row>
+          </Tab.Container>
+        </TabStyles>
+      </Container>
 
-              <BtnWrap>
-              <Button><a href={repositoryUrl2} target="_blank">Repository</a></Button>
-
-              </BtnWrap>
-
-            </TextWrapper>
-          </Column2>
-        </InfoRow>
-      </InfoWrapper>
-    </InfoContainer>
+    </Container>
 
   )
 
