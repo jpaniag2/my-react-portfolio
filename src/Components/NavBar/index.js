@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components'
+import Logo from '../../images/jpLogo.png'
 
 
 
@@ -48,7 +49,15 @@ const NavBar = () => {
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
                 <Container>
-                    <Navbar.Brand href='/'>Julio Paniagua-Alanis</Navbar.Brand>
+                    <Navbar.Brand href='/'>
+                        <img
+                            src={Logo}
+                            width="60"
+                            height="60"
+                            className="d-inline-block align-top"
+                            alt="logo"
+                        />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

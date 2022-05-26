@@ -23,7 +23,7 @@ const TabStyles = styled.div`
       color: #000;
       &:hover{
         opacity: .8;
-        color: #fff;
+        color: #000;
         transition: all 0.3s ease-out;
       }
   }
@@ -53,16 +53,16 @@ const Projects = () => {
               <Col sm={3}>
                 <Nav fill variant="pills" className="flex-column">
                   <Nav.Item >
-                    <Nav.Link eventKey="first" style={{ cursor: 'pointer' }}>Java</Nav.Link>
+                    <Nav.Link eventKey="first" >Java</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second" style={{ cursor: 'pointer' }}>HTML, CSS, JavaScript, React.js</Nav.Link>
+                    <Nav.Link eventKey="second" >HTML, CSS, JavaScript, React.js</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="third" style={{ cursor: 'pointer' }}>SQL</Nav.Link>
+                    <Nav.Link eventKey="third" >SQL</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="fourth" style={{ cursor: 'pointer' }}>C#</Nav.Link>
+                    <Nav.Link eventKey="fourth" >C#</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>
