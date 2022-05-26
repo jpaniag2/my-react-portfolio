@@ -14,7 +14,7 @@ const freelanceProjects = [AztecaBakery, LaAcapulquena]
 const Freelance = () => {
   return (
 
-    <Container fluid style={{ backgroundColor: '#212429', paddingBottom: '10%' }} id='freelance'>
+    <Container fluid style={{ backgroundColor: '#212429', paddingBottom: '10%', paddingTop: '10%' }} id='freelance'>
     <Container>
     <br></br>
       <Introduction>Professional Work</Introduction>

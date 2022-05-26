@@ -36,7 +36,7 @@ const ExperienceIcons = () => {
           })
     }
     return (
-        <Container fluid style={{ color: '#fff', backgroundColor: '#212429', paddingTop: '10%', paddingBottom: '15%'}} >
+        <Container fluid style={{ color: '#fff', backgroundColor: '#212429', paddingTop: '10%', paddingBottom: '5%'}} >
                                     <br></br>
                         {/* <Introduction>Framer Motion</Introduction> */}
                         <TopLine>drag icons</TopLine>
