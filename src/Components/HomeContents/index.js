@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Experience from '../Experience';
+import Footer from '../Footer';
 import Freelance from '../Freelance';
 import { freelanceObjOne } from '../Freelance/Data';
 import Hero from '../Hero';
@@ -19,6 +20,7 @@ const HomeContents = () => {
     
     <Freelance {...freelanceObjOne}/>
     <Projects />
+    <Footer />
     </Container>
 
     
