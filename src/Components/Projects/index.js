@@ -27,6 +27,7 @@ const TabStyles = styled.div`
         transition: all 0.3s ease-out;
       }
   }
+
 `
 
 const Projects = () => {
@@ -41,7 +42,7 @@ const Projects = () => {
 
   return (
     <Container fluid style={{ backgroundColor: '#212429' }} id='projects'>
-      <Container fluid="xxl">
+      <Container fluid>
         <br></br>
         <Introduction>Projects</Introduction>
         <TopLine>by language</TopLine>

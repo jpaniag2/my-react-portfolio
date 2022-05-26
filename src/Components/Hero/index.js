@@ -27,10 +27,11 @@ const HeroBg = styled.div`
 
     const VideoBg = styled.video`
     width: 100%;
-    height: 90%;
+    height: 800px;
     -o-object-fit: none;
     object-fit: cover;
     background-color: transparent;
+    position: center;
 
     @media screen and (max-width: 1024px){
         margin-top: 10%;

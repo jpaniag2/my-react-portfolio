@@ -14,10 +14,10 @@ const freelanceProjects = [AztecaBakery, LaAcapulquena]
 const Freelance = () => {
   return (
 
-    <Container id='freelance'>
-
-      <br></br>
-      <Introduction>Freelance</Introduction>
+    <Container fluid style={{ backgroundColor: '#212429', paddingBottom: '10%' }} id='freelance'>
+    <Container>
+    <br></br>
+      <Introduction>Professional Work</Introduction>
       <TopLine>clients</TopLine>
 
       <Row xs={1} md={2} className="g-4">
@@ -28,6 +28,7 @@ const Freelance = () => {
         ))}
       </Row>
       <br></br>
+    </Container>
     </Container>
 
     // <InfoContainer lightBg={lightBg} id='freelance'>

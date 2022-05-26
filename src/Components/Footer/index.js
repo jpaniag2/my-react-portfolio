@@ -12,10 +12,10 @@ const Footer = () => {
 
 
     return (
-        <Container fluid>
+        <Container fluid style={{ backgroundColor: '#212429' }}>
             <FooterWrap>
 
-                <WebsiteRights> Made by CrunchyVision©</WebsiteRights>
+                <WebsiteRights> Made by Julio Paniagua©</WebsiteRights>
                 
             </FooterWrap>
         </Container>
