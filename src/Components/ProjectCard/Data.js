@@ -40,3 +40,25 @@ export const CindysCatering = {
     buttonLabel: 'Repository',
     repositoryUrl: 'https://github.com/jpaniag2/CindysCatering',
 }
+
+export const AztecaBakery = {
+    id: 'azteca',
+    alt: 'aztecaproject',
+    projectName: "Azteca Bakery",
+    img: require('../../images/azteca_webapp.png'), 
+    description: 'Designing and developing a responsive website for a local Mexican bakery.',
+    buttonLabel: 'Visit Website',
+    repositoryUrl: 'https://theaztecabakery.com/',
+
+
+}
+
+export const LaAcapulquena = {
+    id: 'acapulquena',
+    alt: 'acapulquenaproject',
+    projectName: "La Acapulqueña",
+    img: require('../../images/acapulquena_webapp.png'),
+    description: 'Designing and developing a responsive food ordering website for a Mexican store & taqueria.',
+    buttonLabel: 'Visit Website',
+    repositoryUrl: 'https://acapulquenasupermarket.com/',
+}
