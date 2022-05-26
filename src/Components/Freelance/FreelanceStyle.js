@@ -54,18 +54,6 @@ export const TextWrapper = styled.div`
     display: block;
 `
 
-export const TopLine = styled.p`
-    color: #fff;
-    font-size: 2rem;
-    line-height: 16px;
-    font-family: 'Bellota Text', cursive;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    line-height: 30px;
-`
-
 export const TopLine2 = styled.p`
     color: #fff;
     font-size: 2rem;
@@ -138,4 +126,28 @@ export const Img = styled.img`
         padding-top: 10px;
         
     }
+`
+export const Introduction = styled.p`
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Bellota Text', cursive;
+    line-height: 1.1;
+    font-weight: 700;
+    color: ${({lightText}) => (lightText ? '#111' : '#fff')};
+
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
+`
+export const TopLine = styled.p`
+    color: #ce202a;
+    font-size: 1rem;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 30px;
+    text-align: center;
 `
