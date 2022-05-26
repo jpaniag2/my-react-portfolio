@@ -43,46 +43,46 @@ const NavStyle = styled.div`
 
 const NavBar = () => {
 
-  return (
-      <NavStyle>
-            
-          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
-              <Container>
-                  <Navbar.Brand href='#home'>Julio Paniagua-Alanis</Navbar.Brand>
-                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                  <Navbar.Collapse id="responsive-navbar-nav">
-                      <Nav className="me-auto">
-                      </Nav>
-                      <Nav navbarScroll>
+    return (
+        <NavStyle>
 
-                          <NavDropdown title="Projects By Language" id="collasible-nav-dropdown" >
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+                <Container>
+                    <Navbar.Brand href='#home'>Julio Paniagua-Alanis</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                        </Nav>
+                        <Nav navbarScroll>
 
-                            <NavDropdown.Item href='#moreprojects'>Java</NavDropdown.Item>
-                              <NavDropdown.Item href='#projects'>HTML,CSS,JavaScript, React.js</NavDropdown.Item>
-                              <NavDropdown.Item href="#home">Swift</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.3">C#</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.3">Ruby</NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.3">SQL</NavDropdown.Item>
-                              <NavDropdown.Divider />
-                              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                          </NavDropdown>
-                          
-                          <Nav.Link eventKey={2} href="#memes">
-                              
-                          </Nav.Link>
-                          <Nav.Item >
-                              <a style={{color:'#fff'}} href="https://github.com/jpaniag2" target="_blank"><FaGithub size='2.5rem' /></a>
-                          </Nav.Item>
-                          <Nav.Item>
-                              <a style={{color:'#fff'}} href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaLinkedin size='2.5rem' /></a>
-                          </Nav.Item>
-                      </Nav>
-                  </Navbar.Collapse>
-              </Container>
-          </Navbar>
-      </NavStyle>
+                            <NavDropdown title="Quick Scroll" id="collasible-nav-dropdown" >
 
-  )
+                                <NavDropdown.Item href='#home'>Home</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#experience">Skills</NavDropdown.Item>
+                                <NavDropdown.Item href='#freelance'>Professional Work</NavDropdown.Item>
+                                <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3"> </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3"> </NavDropdown.Item>
+
+                            </NavDropdown>
+
+                            <Nav.Link eventKey={2} href="#memes">
+
+                            </Nav.Link>
+                            <Nav.Item >
+                                <a style={{ color: '#fff' }} href="https://github.com/jpaniag2" target="_blank"><FaGithub size='2.5rem' /></a>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <a style={{ color: '#fff' }} href="https://www.linkedin.com/in/juliopaniaguaalanis/" target="_blank"><FaLinkedin size='2.5rem' /></a>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </NavStyle>
+
+    )
 }
 
 export default NavBar
