@@ -17,9 +17,9 @@ const HomeContents = () => {
     <Container fluid style={{backgroundColor: '#1D1D1D', marginTop:'3%'}}>
     <NavBar />
     <Hero {...homeObjOne}/>
-    <Experience /> 
     <ExperienceIcons />
     <Freelance/>
+    <Experience /> 
     <Projects />
     <Footer />
     </Container>

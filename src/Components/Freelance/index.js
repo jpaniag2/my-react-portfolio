@@ -17,8 +17,8 @@ const Freelance = () => {
     <Container fluid style={{ backgroundColor: '#212429', paddingBottom: '10%', paddingTop: '10%' }} id='freelance'>
     <Container>
     <br></br>
-      <Introduction>Professional Work</Introduction>
-      <TopLine>clients</TopLine>
+      <Introduction>Crunchy Visions ©</Introduction>
+      <TopLine>Freelance Clients</TopLine>
 
       <Row xs={1} md={2} className="g-4">
         {freelanceProjects.map((project) => (
